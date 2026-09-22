@@ -1,0 +1,35 @@
+nav {
+    display: flex;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 1000px;
+    position: fixed;
+}
+
+.nav-img {
+    width: 200px;
+    padding: 0 0 0 40px;
+}
+
+.nav-item {
+    text-decoration: none;
+    padding: 25px;
+    color: var(--offwhite);
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.nav-item:hover {
+    color: var(--preto);
+    background-color: var(--roxo);
+}
+
+
+.cabecalho{
+    display: flex;
+    justify-content: center;
+}
+
