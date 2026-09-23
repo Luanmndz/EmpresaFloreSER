@@ -1,0 +1,8 @@
+.foto-do-profissional {
+    color: var(--offwhite);
+    display: flex;
+}
+
+.foto-do-profissional, .foto-do-profissional-reverse img {
+    width: 200px;
+}
