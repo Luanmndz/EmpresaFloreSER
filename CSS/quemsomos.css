@@ -1,8 +1,43 @@
-.foto-do-profissional {
-    color: var(--offwhite);
-    display: flex;
+.quem-somos {
+    margin: auto;
+    padding: 10px;
+    max-width: 100%;
 }
 
-.foto-do-profissional, .foto-do-profissional-reverse img {
-    width: 200px;
+.card-profissional{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1000px;
+    margin: auto;
+    gap: 30px;
+    padding: 10px 15px;
+}
+
+.caixa-texto {
+    width: 60%;
+    display: flex;
+    align-items: center;
+
+}
+
+.texto-profissional {
+    color: var(--offwhite);
+    text-align: justify;
+    line-height: 2;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 2px;
+} 
+
+
+.img {
+    width: 40%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.reverse {
+    flex-direction: row-reverse;
 }
