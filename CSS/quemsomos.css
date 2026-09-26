@@ -1,23 +1,23 @@
 .quem-somos {
-    margin: auto;
-    padding: 10px;
-    max-width: 100%;
+   padding: 40px 20px;
+   display: flex;
+   flex-direction: column;
+   gap: 40px;
 }
 
 .card-profissional{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 1000px;
+    width: 100%;
+    max-width: 1000px;
     margin: auto;
     gap: 30px;
     padding: 10px 15px;
 }
 
 .caixa-texto {
-    width: 60%;
-    display: flex;
-    align-items: center;
+    flex: 1;
 
 }
 
@@ -32,12 +32,50 @@
 
 
 .img {
-    width: 40%;
-    height: auto;
+    width: 35%;
+    max-width: 320px;
+    aspect-ratio: 1/1;
     object-fit: cover;
     border-radius: 20px;
+    flex-shrink: 0;
 }
 
 .reverse {
     flex-direction: row-reverse;
+}
+
+@media (max-width: 868px) {
+    .card-profissional {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .card-profissional .img {
+        width: 100%;
+        max-width: 260px;
+    }
+
+    .texto-profissional {
+        text-align: center;
+        font-size: 0.95rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .quem-somos {
+        padding: 20px 15px;
+        gap: 30px;
+    }
+
+    .card-profissional .img {
+        max-width: 220px;
+    }
+
+    .texto-profissional {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        letter-spacing: 0.5px;
+    }
 }

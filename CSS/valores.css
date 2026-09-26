@@ -1,23 +1,163 @@
 .valores {
     display: flex;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     justify-content: space-around;
     color: var(--lavanda);
+    padding: 80px 20px 20px;
     text-align: center;
     align-items: center;
+    flex-wrap: wrap;
 }
+
+.valores h3{
+    font-weight: bold;
+    margin: 16px;
+    color: var(--roxo);
+}  
 
 .card {
-    border: 1px solid white;
-    width: 20%;
-    padding: 20px;
-}
-.texto-card {
-    text-align: justify;
-}
-.foto-card{
-    width: 200px;
-    height: auto;
+    border: 5px inset var(--roxo);
+    width: 22%;
+    min-width: 250px;
+    padding: 10px 20px;
+    min-height: 580px;
+    display: flex;
+    flex-direction: column;
 }
 
+.texto-card {
+    text-align: left;
+    min-height: 100px;
+    line-height: 2;
+    font-weight: 500;
+}
+
+.foto-card{
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.2s linear;
+}
+
+.foto-card:hover {
+     scale: 1.2;
+}
+
+.btn-card {
+    background-color: var(--roxo);
+    text-decoration: none;
+    color: var(--lavanda);
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 10px;
+    letter-spacing: 0.5px;
+    margin-top: auto;
+    width: 40%;
+    min-width: 90px;
+    align-self: flex-end;
+    border: none;
+    font-family:'Courier New', Courier, monospace ;
+    cursor: pointer;
+}
+
+.btn-card:hover {
+    background-color: var(--preto);
+    border: 1px solid var(--roxo);
+    color: var(--lavanda);
+}
+
+#popup-card {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 2000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+#btn-fechar {
+    background-color: var(--roxo);
+    border: 2px solid var(--lavanda);
+    align-self: flex-end;
+    min-width: 60px;
+    font-size: 30px;
+    color: var(--preto);
+    cursor: pointer;
+}
+
+#btn-fechar:hover {
+    background-color: var(--preto);
+    color: var(--lavanda);
+}
+
+#popup-card.ativo {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup-caixa {
+    background-color: var(--preto);
+    color: var(--offwhite);
+    padding: 30px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 500px;
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: column;
+    border: 5px outset var(--roxo);
+    transform: translateY(-20px);
+    transition: transform 0.3s ease;
+    line-height: 2;
+}
+
+#popup-title {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+#popup-card.ativo .popup-caixa {
+    transform: translateY(0);
+}
+
+
+@media (max-width: 1100px) {
+    .valores {
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 600px) {
+    .valores {
+        padding-top: 120px;
+    }
+    .card {
+        width: 100%;
+    }
+
+    .popup-caixa {
+        padding: 20px;
+        font-size: 0.9rem;
+    }
+
+    #btn-fechar {
+        font-size: 24px;
+    }
+
+}

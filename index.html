@@ -5,11 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FloreSer</title>
+    <link rel="shortcut icon" href="imagens/Logo.png" type="image/x-icon">
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="CSS/navbar.css">
     <link rel="stylesheet" href="CSS/corpoprincipal.css">
     <link rel="stylesheet" href="CSS/quemsomos.css">
     <link rel="stylesheet" href="CSS/valores.css">
+    <link rel="stylesheet" href="CSS/footer.css">
 </head>
 
 <body>
@@ -19,7 +22,7 @@
         <header class="cabecalho">
             <nav>
 
-                <a class="nav-img " href="#Logo">
+                <a href="#Logo">
                     <img src="imagens/Logo.png" alt="Logo FloreSER" class="nav-img">
                 </a>
 
@@ -29,6 +32,8 @@
                     <a class="nav-item" href="#Valores">Valores</a>
 
                     <a class="nav-item" href="#Contato">Contato</a>
+
+                    <a class="nav-item" href="#Projetos"> Projetos </a>
                 </div>
             </nav>
         </header>
@@ -54,7 +59,7 @@
         <section id="QuemSomos" class="quem-somos">
             <!-- DESCRIÇÃO DE CADA PROFISSIONAL -->
             <div class="card-profissional">
-                <img src="imagens/foto-dos-profissionais/Profissional Luan.png" alt=" Profissional Ana" class="img">
+                <img src="imagens/foto-dos-profissionais/Profissional Ana.png" alt=" Profissional Ana" class="img">
                 <div class="caixa-texto">
                     <p class="texto-profissional">
                         Oi! Eu sou a Ana, tenho 18 anos e atualmente curso Desenvolvimento de Software Multiplataforma
@@ -67,7 +72,7 @@
             </div>
 
             <div class="card-profissional reverse">
-                <img src="imagens/foto-dos-profissionais/Profissional joabe.png" alt="Profissional Gabrielly"
+                <img src="imagens/foto-dos-profissionais/Profissional Gabriely.png" alt="Profissional Gabrielly"
                     class="img">
                 <div class="caixa-texto">
                     <p class="texto-profissional">
@@ -117,66 +122,133 @@
                 <h3> Missão </h3>
                 <p class="texto-card">
                     A missão da FloreSer é atuar nos bastidores para transformar ideias em sites funcionais, modernos e
-                    personalizados, atendendo desde pequenas até grandes empresas.
-                    Buscamos otimizar o tempo dos nossos clientes e, ao mesmo tempo, valorizar suas opiniões e
-                    necessidades em cada etapa do desenvolvimento. Dessa forma, trabalhamos em conjunto para que o
-                    resultado final não seja apenas um site, mas uma solução que realmente represente a visão e os
-                    objetivos de cada cliente.
+                    personalizados, atendendo desde pequenas até grandes empresas. Buscamos otimizar o tempo e valorizar
+                    cada etapa do projeto.
                 </p>
+                <button href="#saiba-mais" class="btn-card" data-popup="missao">Saiba mais</button>
             </div>
 
             <div class="card">
                 <img class="foto-card" src="imagens/cards-fotos/visao.jpg" alt="visão">
                 <h3> Visão </h3>
                 <p class="texto-card">
-                    Temos como objetivo tornar a FloreSer uma empresa de grande porte e referência no desenvolvimento e
-                    terceirização de sistemas e sites para empresas de diferentes segmentos e tamanhos.
-                    Queremos crescer de forma constante, ampliando nossa atuação e oferecendo soluções digitais de
-                    qualidade tanto para pequenas empresas quanto para grandes organizações, sempre buscando inovação,
-                    criatividade e excelência em nossos projetos.
+                    Temos como objetivo tornar a FloreSer uma referência no desenvolvimento e terceirização de sistemas
+                    e sites para empresas de todos os portes. Queremos crescer com inovação, criatividade e excelência
+                    em nossos projetos.
                 </p>
+                <button href="#saiba-mais" class="btn-card" data-popup="visao">Saiba mais</button>
             </div>
 
             <div class="card">
                 <img class="foto-card" src="imagens/cards-fotos/valores.jpg" alt="valores">
                 <h3> Valores </h3>
                 <p class="texto-card">
-                    Na FloreSer, acreditamos que honestidade, qualidade e comprometimento são essenciais para construir
-                    bons projetos e relações de confiança.
-                    Buscamos entregar produtos de qualidade, mantendo o foco e a dedicação em cada trabalho. Valorizamos
-                    a transparência com nossos clientes, suas ideias e opiniões, para que cada projeto seja desenvolvido
-                    com responsabilidade e atenção aos detalhes.
-                    Mais do que criar soluções digitais, queremos construir relações duradouras e entregar resultados
-                    dos quais nossos clientes possam se orgulhar.
-
+                    Acreditamos que honestidade, qualidade e comprometimento são essenciais para construir boas
+                    relações. Valorizamos a transparência e a responsabilidade para entregar resultados dos quais nossos
+                    clientes possam se orgulhar.
                 </p>
+                <button href="#saiba-mais" class="btn-card" data-popup="valores">Saiba mais</button>
             </div>
 
             <div class="card">
                 <img class="foto-card" src="imagens/cards-fotos/servicos.jpg" alt="serviços">
                 <h3> Serviços </h3>
                 <p class="texto-card">
-                    Na FloreSer, oferecemos soluções completas para transformar ideias em projetos digitais funcionais,
-                    organizados e personalizados.
-                    Nossos serviços incluem organização e planejamento de ideias, desenvolvimento Front-end e Back-end,
-                    criação de layouts e desenvolvimento de sites completos. Cada projeto é planejado de acordo com as
-                    necessidades, objetivos e opiniões de nossos clientes.
-                    Do primeiro esboço até o sistema completo, trabalhamos em cada etapa do projeto para transformar a
-                    ideia do cliente em uma solução digital de qualidade, funcional e com a sua identidade.
+                    Oferecemos soluções completas para transformar ideias em projetos digitais funcionais. Nossos
+                    serviços incluem planejamento, criação de layouts e desenvolvimento Front-end e Back-end para criar
+                    soluções de alta qualidade.
                 </p>
+                <button href="#saiba-mais" class="btn-card" data-popup="servicos">Saiba mais</button>
             </div>
         </section>
         <!-- FOOTER -->
-        <div class="vazia"></div> <!--div vazia para fazer a divisão-->
         <footer id="Contato">
-            <a href=""> <img src="imagens/icones/e-mail.png" alt="email" height="20px"> E-mail </a>
 
-            <a href=""> <img src="imagens/icones/github.png" alt="github" height="20px"> GitHub </a>
+            <div class="footer-conteudo">
+                <img src="imagens/Logo.png" alt="Logo FloreSER">
 
-            <a href=""> <img src="imagens/icones/whatsapp.png" alt="whatsapp" height="20px"> Whatsapp </a>
+                <div class="footer-coluna">
+                    <h3> Navegação </h3>
+                    <ul>
+                        <li><a href="#Logo">HOME</a></li>
+                        <li><a href="#QuemSomos">QUEM SOMOS</a></li>
+                        <li><a href="#Valores">VALORES</a></li>
+                        <li><a href="#">PROJETOS</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-coluna">
+                    <h3> Nos Contate </h3>
+                    <ul>
+                        <li>
+                            Email
+                            <a href="" target="_blank"><i class="bi bi-envelope-at-fill"></i></a>
+                        </li>
+
+                        <li>
+                            GitHub
+                            <a href="" target="_blank"><i class="bi bi-github"></i></a>
+                        </li>
+
+                        <li>
+                            Linkedin
+                            <a href="" target="_blank"><i class="bi bi-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-coluna">
+                    <h3> Contatos Individuais</h3>
+                    <ul>
+                        <li>
+                            Ana Luiza
+                            <a href="https://www.linkedin.com/in/ana-luiza-santana-366901410" target="_blank"
+                                aria-label="LinkedIn de Ana Luiza"><i class="bi bi-linkedin"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            Gabrielly Lacerda
+                            <a href="https://www.linkedin.com/in/gabrielly-lacerda-04376a366?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                                target="_blank" aria-label="Linkedin de Gabrielly Lacerda"><i
+                                    class="bi bi-linkedin"></i></a>
+                        </li>
+
+                        <li>
+                            Joabe Oliveira
+                            <a href="https://www.linkedin.com/in/joabe-oliveira-a284642bb?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
+                                target="_blank" aria-label="LinkedIn de Joabe Oliveira"><i
+                                    class="bi bi-linkedin"></i></a>
+                        </li>
+
+                        <li>
+                            Luan Mendes
+                            <a href="https://www.linkedin.com/in/luan-mendes-a3a4903a8/" target="_blank"
+                                aria-label="LinkedIn de Luan Mendes"><i class="bi bi-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-baixo">
+                <p> &copy; FloreSER - Todos os direitos reservados. </p>
+            </div>
+
         </footer>
     </main>
 
+
+    <!-- area dos popup -->
+    <div id="popup-card">
+        <div class="popup-caixa">
+            <button id="btn-fechar">&times;</button>
+            <h3 id="popup-title"></h3>
+            <p id="popup-text"></p>
+        </div>
+    </div>
+
+
+    <script src="JS/script.js"></script>
 </body>
 
 </html>

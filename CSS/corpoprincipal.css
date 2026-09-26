@@ -1,6 +1,6 @@
 .separacao {
-    height: 100vh;
-    padding: 10px 20px;
+    min-height: 100vh;
+    padding: 60px 20px;
     color: var(--offwhite);
     display: flex;
     justify-content: center;
@@ -9,11 +9,13 @@
 }
 
 .imagem-logo {
-    width: 80%;
+    width: 100%;
+    max-width: 1600px;
 }
 
 .texto-logo {
-    width: 70%;
+    width: 100%;
+    max-width: 1200px;
     font-size: 1.2rem;
     text-align: justify;
     letter-spacing: 2px;
@@ -21,3 +23,28 @@
     margin-top: 20px;
 }
 
+@media (max-wdith: 768px){
+    .imagem-logo{
+        width: 90%;
+        max-width: 600px;
+    }
+
+    .texto-logo {
+        width: 90%;
+        font-size: 1rem;
+        text-align: center;
+    }
+}
+
+@media (max-wdith: 480px){
+    .imagem-logo {
+        width: 95%;
+        max-width: 400px;
+    }
+
+    .texto-logo {
+        width: 95%;
+        font-size: 0.95rem;
+        letter-spacing: 0.5px;
+    }
+}
