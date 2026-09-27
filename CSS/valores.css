@@ -138,7 +138,7 @@
         justify-content: center;
     }
 
-    .card {
+    .card-valores {
         width: 45%;
     }
 }
@@ -147,7 +147,7 @@
     .valores {
         padding-top: 120px;
     }
-    .card {
+    .card-valores {
         width: 100%;
     }
 
