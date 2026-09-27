@@ -16,7 +16,7 @@
     color: var(--roxo);
 }  
 
-.card {
+.card-valores {
     border: 5px inset var(--roxo);
     width: 22%;
     min-width: 250px;

@@ -13,32 +13,28 @@
     <link rel="stylesheet" href="CSS/quemsomos.css">
     <link rel="stylesheet" href="CSS/valores.css">
     <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="CSS/projetos.css">
 </head>
 
 <body>
-
     <main class="principal">
-        <!-- NAVBAR -->
+        <!-- navbar -->
         <header class="cabecalho">
             <nav>
-
                 <a href="#Logo">
                     <img src="imagens/Logo.png" alt="Logo FloreSER" class="nav-img">
                 </a>
 
                 <div class="nav-items">
                     <a class="nav-item" href="#QuemSomos">Quem Somos</a>
-
                     <a class="nav-item" href="#Valores">Valores</a>
-
+                    <a class="nav-item" href="#projetos"> Projetos </a>
                     <a class="nav-item" href="#Contato">Contato</a>
-
-                    <a class="nav-item" href="#Projetos"> Projetos </a>
                 </div>
             </nav>
         </header>
 
-        <!-- CORPO DO SITE -->
+        <!-- hero -->
         <section id="Logo" class="corpo-principal">
             <div class="separacao">
                 <img class="imagem-logo" src="imagens/Logo.png" alt="Logo FloreSer">
@@ -54,10 +50,8 @@
         </section>
         <hr>
 
-
-        <!-- PAGINA DOIS -->
+        <!-- Quem somos -->
         <section id="QuemSomos" class="quem-somos">
-            <!-- DESCRIÇÃO DE CADA PROFISSIONAL -->
             <div class="card-profissional">
                 <img src="imagens/foto-dos-profissionais/Profissional Ana.png" alt=" Profissional Ana" class="img">
                 <div class="caixa-texto">
@@ -115,9 +109,10 @@
 
         </section>
         <hr>
-        <!-- PAGINA TRES -->
+
+        <!-- Valores -->
         <section id="Valores" class="valores">
-            <div class="card">
+            <div class="card-valores">
                 <img class="foto-card" src="imagens/cards-fotos/missao.jpg" alt="missão">
                 <h3> Missão </h3>
                 <p class="texto-card">
@@ -128,7 +123,7 @@
                 <button href="#saiba-mais" class="btn-card" data-popup="missao">Saiba mais</button>
             </div>
 
-            <div class="card">
+            <div class="card-valores">
                 <img class="foto-card" src="imagens/cards-fotos/visao.jpg" alt="visão">
                 <h3> Visão </h3>
                 <p class="texto-card">
@@ -139,7 +134,7 @@
                 <button href="#saiba-mais" class="btn-card" data-popup="visao">Saiba mais</button>
             </div>
 
-            <div class="card">
+            <div class="card-valores">
                 <img class="foto-card" src="imagens/cards-fotos/valores.jpg" alt="valores">
                 <h3> Valores </h3>
                 <p class="texto-card">
@@ -150,7 +145,7 @@
                 <button href="#saiba-mais" class="btn-card" data-popup="valores">Saiba mais</button>
             </div>
 
-            <div class="card">
+            <div class="card-valores">
                 <img class="foto-card" src="imagens/cards-fotos/servicos.jpg" alt="serviços">
                 <h3> Serviços </h3>
                 <p class="texto-card">
@@ -161,9 +156,104 @@
                 <button href="#saiba-mais" class="btn-card" data-popup="servicos">Saiba mais</button>
             </div>
         </section>
+        <hr>
+
+        <!-- Projetos  -->
+        <section id="projetos" class="projetos">
+            <div class="projetos-card">
+
+                <div class="projetos-header">
+                    <img src="imagens/jauqe.png" alt="Logo Jaquel Bolos" class="projetos-logo">
+
+                    <div class="texto-projeto">
+                        <h3> Projeto Jaquel Bolos </h3>
+                        <p>
+                            Desenvolvimento de uma plataforma web focada em otimizar as vendas e a experiência de compra
+                            dos clientes da Jaquel Bolos.
+                        </p>
+                        <ul class="informacoes-projeto">
+                            <li><strong>Carrinho Interativo e Dinâmico:</strong> Permite selecionar produtos, ajustar
+                                quantidades e ver o cálculo do valor total do pedido em tempo real.</li>
+
+                            <li><strong>Envio de Pedido Formatado:</strong> Sistema inteligente em JavaScript que
+                                organiza os itens escolhidos, os dados de entrega e as observações em uma mensagem clara
+                                e pronta para enviar ao WhatsApp da Jaque.</li>
+
+                            <li><strong>Boas Práticas:</strong> Desenvolvido com HTML, CSS e JavaScript, mantendo o
+                                código limpo, responsivo e versionado via Git/GitHub.</li>
+                        </ul>
+
+                        <div class="links-projetos">
+                            <ul>
+                                <li>
+                                    <a href="https://github.com/Luanmndz/ProjetoJaquelBolos.git" target="_blank"
+                                        aria-label="Link do Repositorio">
+                                        <i class="bi bi-github"></i> Repositorio
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://luanmndz.github.io/ProjetoJaquelBolos/" target="_blank"
+                                        aria-label="Link Site Jaquel Bolos">
+                                        <i class="bi bi-box-arrow-up-right"></i> Ver Projeto Online
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- fotos duplicadas para efeito de infinito -->
+                <div class="carousel">
+                    <div class="group">
+                        <div class="card"><img src="imagens/carrossel/bolo1.jpg" class="foto-carrosel"
+                                alt="Foto Bolo 1">
+                        </div>
+                        <div class="card"><img src="imagens/carrossel/bolo2.jpg" class="foto-carrosel"
+                                alt="Foto Bolo 2">
+                        </div>
+                        <div class="card"><img src="imagens/carrossel/bolo3.jpg" class="foto-carrosel"
+                                alt="Foto Bolo 3">
+                        </div>
+                        <div class="card"><img src="imagens/carrossel/bolo4.png" class="foto-carrosel"
+                                alt="Foto Bolo 4">
+                        </div>
+                        <div class="card"><img src="imagens/carrossel/bolo5.jpg" class="foto-carrosel"
+                                alt="Foto Bolo 5">
+                        </div>
+                        <div class="card"><img src="imagens/carrossel/bolo6.png" class="foto-carrosel"
+                                alt="Foto Bolo 6">
+                        </div>
+                        <div class="card"><img src="imagens/carrossel/bolo7.jpg" class="foto-carrosel"
+                                alt="Foto Bolo 7">
+                        </div>
+                        <div class="card"><img src="imagens/carrossel/bolo8.jpg" class="foto-carrosel"
+                                alt="Foto Bolo 8">
+                        </div>
+                    </div>
+
+                    <div class="group" aria-hidden="true">
+                        <div class="card"><img src="imagens/carrossel/bolo1.jpg" class="foto-carrosel" alt="Bolo 1">
+                        </div>
+                        <div class="card"><img src="imagens/carrossel/bolo2.jpg" class="foto-carrosel" alt="Bolo 2">
+                        </div>
+                        <div class="card"><img src="imagens/carrossel/bolo3.jpg" class="foto-carrosel" alt="Bolo 3">
+                        </div>
+                        <div class="card"><img src="imagens/carrossel/bolo4.png" class="foto-carrosel" alt="Bolo 4">
+                        </div>
+                        <div class="card"><img src="imagens/carrossel/bolo5.jpg" class="foto-carrosel" alt="Bolo 5">
+                        </div>
+                        <div class="card"><img src="imagens/carrossel/bolo6.png" class="foto-carrosel" alt="Bolo 6">
+                        </div>
+                        <div class="card"><img src="imagens/carrossel/bolo7.jpg" class="foto-carrosel" alt="Bolo 7">
+                        </div>
+                        <div class="card"><img src="imagens/carrossel/bolo8.jpg" class="foto-carrosel" alt="Bolo 8">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- FOOTER -->
         <footer id="Contato">
-
             <div class="footer-conteudo">
                 <img src="imagens/Logo.png" alt="Logo FloreSER">
 
@@ -173,7 +263,7 @@
                         <li><a href="#Logo">HOME</a></li>
                         <li><a href="#QuemSomos">QUEM SOMOS</a></li>
                         <li><a href="#Valores">VALORES</a></li>
-                        <li><a href="#">PROJETOS</a></li>
+                        <li><a href="#projetos">PROJETOS</a></li>
                     </ul>
                 </div>
 
@@ -229,11 +319,10 @@
                     </ul>
                 </div>
             </div>
-            
+
             <div class="footer-baixo">
                 <p> &copy; FloreSER - Todos os direitos reservados. </p>
             </div>
-
         </footer>
     </main>
 
@@ -247,8 +336,6 @@
         </div>
     </div>
 
-
     <script src="JS/script.js"></script>
 </body>
-
 </html>

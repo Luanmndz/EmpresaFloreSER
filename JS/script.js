@@ -1,5 +1,12 @@
-// Objeto para botar os textos dinamicamente nos popup
+// Pega o valor do datapop do html
+let botoes = document.querySelectorAll("[data-popup]");
 
+let popCard = document.getElementById("popup-card");
+let popTitle = document.getElementById("popup-title");
+let popText = document.getElementById("popup-text");
+let btnFechar = document.getElementById("btn-fechar");
+
+// Objeto para botar os textos dinamicamente nos popup
 let TextoPopUp = {
     missao: {
         titulo: "Nossa missão",
@@ -18,15 +25,7 @@ let TextoPopUp = {
         texto: "Oferecemos uma esteira completa de soluções digitais ponta a ponta para transformar ideias em plataformas web robustas e funcionais. Nosso trabalho abrange desde a fase inicial de planejamento estratégico, arquitetura de informação e criação de layouts modernos (UI/UX Design), até ao desenvolvimento técnico avançado de Front-end e Back-end. Priorizamos a criação de aplicações responsivas, ágeis, otimizadas para motores de busca (SEO) e extremamente seguras, garantindo que o seu público final tenha a melhor experiência de navegação possível."
     }
 }
-
-// Pega o valor do datapop do html
-let botoes = document.querySelectorAll("[data-popup]");
-
-let popCard = document.getElementById("popup-card");
-let popTitle = document.getElementById("popup-title");
-let popText = document.getElementById("popup-text");
-let btnFechar = document.getElementById("btn-fechar");
-
+// Percorre os botoes e aciona na onde foi clicado
 botoes.forEach(botao => {
     botao.addEventListener("click", (clique) => {
         let nome = clique.currentTarget.dataset.popup;
@@ -41,13 +40,13 @@ botoes.forEach(botao => {
         }
     });
 });
-
+// Se clicar no botao de sair remove a class do css (ativo)
 if (btnFechar) {
     btnFechar.addEventListener("click", () => {
         popCard.classList.remove('ativo')
     });
 }
-
+// se clicar no ambiente atras remove tambem :)
 if (popCard) {
     popCard.addEventListener("click", (i) => {
         if (i.target === popCard) {
