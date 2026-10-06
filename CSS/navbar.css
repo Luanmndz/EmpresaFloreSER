@@ -55,16 +55,44 @@ nav {
     text-shadow: 0 0 8px var(--roxo); 
 }
 
-#theme {
+.theme {
     border: none;
+    color: var(--texto);
     background-color: transparent;
-    color: var(--off-white);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 8px;
+}
+
+
+.theme i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
     font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
-#theme:hover {
+
+/* Remove a linha de base do pseudo-elemento do Bootstrap Icons */
+.theme i::before {
+    vertical-align: middle;
+}
+
+.theme:hover {
     background-color: var(--roxo);
-    color: var(--preto);
+    transform: translateY(-3px);
 }
+
+
 
 @media (max-width: 992px) {
     .nav-img {
@@ -103,5 +131,16 @@ nav {
     .nav-item {
         padding: 6px 10px;
         font-size: 0.75rem;
+    }
+}
+
+@keyframes surgir {
+    from {
+        opacity: 0;
+        transform: rotate(-45deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotate(0deg);
     }
 }

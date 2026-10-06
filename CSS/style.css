@@ -21,24 +21,28 @@
 }
 
 .themeLight{
-    display: block;
+    display: block !important;
+    animation: surgir 0.3s ease;
 }
 
 .themeDark {
-    display: none;
+    display: none !important;
 }
+
 [data-theme = 'light']{
     --texto: #000;
     --bg-color: #F8F9FA;
 }
 
-/* [data-theme = 'light'] .themeDark {
-    display: block;
+ [data-theme = 'light'] .themeDark {
+    display: block !important;
+    animation: surgir 0.3s ease;
+    
 }   
 
 [data-theme = 'light'] .themeLight {
-    display: none;
-} */
+    display: none !important;
+} 
 
 
 
@@ -51,4 +55,9 @@ body {
 
 html {
     scroll-behavior: smooth;
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+    animation-duration: 0.2s;
 }
