@@ -15,75 +15,40 @@
     --offwhite: #F8F9FA;
     --nude: #E8D8CE;
     --preto: #000;
+
+    --texto: #F8F9FA;
+    --bg-color: #000;
 }
-html {
-    scroll-behavior: smooth;
+
+.themeLight{
+    display: block;
 }
+
+.themeDark {
+    display: none;
+}
+[data-theme = 'light']{
+    --texto: #000;
+    --bg-color: #F8F9FA;
+}
+
+/* [data-theme = 'light'] .themeDark {
+    display: block;
+}   
+
+[data-theme = 'light'] .themeLight {
+    display: none;
+} */
+
+
 
 body {
     margin: 0;
-    background-color: var(--preto);
+    background-color: var(--bg-color);
+    color: var(--texto);
     font-family: "Montserrat", sans-serif !important;
 }
 
-#popup-card {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.75);
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
-}
-
-#btn-fechar {
-    background-color: var(--roxo);
-    border: 2px solid var(--lavanda);
-    align-self: flex-end;
-    width: 20%;
-    font-size: 30px;
-    color: var(--preto);
-}
-
-#btn-fechar:hover {
-    background-color: var(--preto);
-    color: var(--lavanda);
-
-}
-
-#popup-card.ativo {
-    opacity: 1;
-    visibility: visible;
-}
-
-.popup-caixa {
-    background-color: var(--preto);
-    color: var(--offwhite);
-    padding: 30px;
-    border-radius: 12px;
-    max-width: 500px;
-    letter-spacing: 1px;
-    display: flex;
-    flex-direction: column;
-    border: 5px outset var(--roxo);
-    transform: translateY(-20px);
-    transition: transform 0.3s ease;
-    line-height: 2;
-}
-
-#popup-title {
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-}
-
-#popup-card.ativo .popup-caixa {
-    transform: translateY(0);
+html {
+    scroll-behavior: smooth;
 }

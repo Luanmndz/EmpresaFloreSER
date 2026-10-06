@@ -38,7 +38,7 @@ nav {
 .nav-item {
     text-decoration: none;
     padding: 10px 16px;
-    color: var(--offwhite);
+    color: var(--off-white);
     font-weight: bold;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -55,7 +55,16 @@ nav {
     text-shadow: 0 0 8px var(--roxo); 
 }
 
-
+#theme {
+    border: none;
+    background-color: transparent;
+    color: var(--off-white);
+    font-size: 1.2rem;
+}
+#theme:hover {
+    background-color: var(--roxo);
+    color: var(--preto);
+}
 
 @media (max-width: 992px) {
     .nav-img {

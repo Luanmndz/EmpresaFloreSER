@@ -1,6 +1,6 @@
 footer {
     border-top: 5px solid var(--lavanda);
-    color: var(--offwhite);
+    color: var(--texto);
     width: 100%;
 }
 
@@ -37,7 +37,7 @@ footer {
     letter-spacing: 1.5px;
     font-size: 1.05rem;
     text-transform: uppercase;
-    color: var(--offwhite);
+    color: var(--texto);
     margin-bottom: 20px;
     border-bottom: 2px solid var(--roxo);
     display: inline-block;
@@ -61,7 +61,7 @@ footer {
 }
 
 .footer-coluna a {
-    color: var(--offwhite);
+    color: var(--texto);
     text-decoration: none;
     transition: color 0.25s ease;
     font-size: 16px;

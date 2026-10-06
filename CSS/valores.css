@@ -31,6 +31,7 @@
     min-height: 100px;
     line-height: 2;
     font-weight: 500;
+    color: var(--texto)
 }
 
 .foto-card{
@@ -48,7 +49,7 @@
 .btn-card {
     background-color: var(--roxo);
     text-decoration: none;
-    color: var(--lavanda);
+    color: var(--texto);
     padding: 10px;
     font-weight: bold;
     border-radius: 10px;
@@ -83,6 +84,7 @@
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease;
+    color: var(--texto);
 }
 
 #btn-fechar {
@@ -97,7 +99,7 @@
 
 #btn-fechar:hover {
     background-color: var(--preto);
-    color: var(--lavanda);
+    color: var(--offwhite);
 }
 
 #popup-card.ativo {
@@ -107,7 +109,6 @@
 
 .popup-caixa {
     background-color: var(--preto);
-    color: var(--offwhite);
     padding: 30px;
     border-radius: 12px;
     width: 100%;
@@ -125,12 +126,17 @@
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 5px;
+    color: var(--offwhite);
 }
 
 #popup-card.ativo .popup-caixa {
     transform: translateY(0);
+    color: var(--texto);
 }
 
+#popup-text {
+    color: var(--offwhite);
+}
 
 @media (max-width: 1100px) {
     .valores {

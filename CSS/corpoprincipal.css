@@ -1,7 +1,7 @@
 .separacao {
     min-height: 100vh;
     padding: 60px 20px;
-    color: var(--offwhite);
+    color: var(--texto);
     display: flex;
     justify-content: center;
     align-items: center;

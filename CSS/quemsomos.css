@@ -22,7 +22,7 @@
 }
 
 .texto-profissional {
-    color: var(--offwhite);
+    color: var(--texto);
     text-align: justify;
     line-height: 2;
     font-weight: 400;
