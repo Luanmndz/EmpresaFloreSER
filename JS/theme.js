@@ -1,40 +1,50 @@
 let btn = document.querySelectorAll('#theme');
-let tema = localStorage.getItem('theme');
+let img = document.querySelectorAll('.logo');
 
-let img = document.querySelectorAll('.logo')
+function TrocarTemaEFoto(tema) {
+    document.documentElement.setAttribute('data-theme', tema);
+    localStorage.setItem('theme', tema);
 
-if (tema === 'light') {
-    document.documentElement.setAttribute('data-theme', 'light');
-    img.src = 'imagens/LogoDark.png';
-} else {
-    document.documentElement.setAttribute('data-theme', 'dark');
-    img.src = 'imagens/Logo.png';
+    let caminhoLogo;
+    if (tema === 'light') {
+        caminhoLogo = 'imagens/LogoDark.png';
+    } else {
+        caminhoLogo = 'imagens/Logo.png';
+    }
+
+    img.forEach((logo) => {
+        logo.src = caminhoLogo;
+    });
 }
-btn.forEach((item) => {
-item.addEventListener('click', () => {
+
+let temaUsuario = localStorage.getItem('theme');
+
+let temaAtual = temaUsuario;
+if (!temaUsuario) {
+    temaAtual = 'dark';
+}
+
+TrocarTemaEFoto(temaAtual);
+
+function Temas() {
     let temaAtual = document.documentElement.getAttribute('data-theme');
     let novoTema;
 
     if (temaAtual === 'dark') {
         novoTema = 'light';
-        img.src = 'imagens/LogoDark.png';
-
     } else {
         novoTema = 'dark';
-        img.src = 'imagens/Logo.png';
     }
-
-    let alternarTema = () => {
-        document.documentElement.setAttribute('data-theme', novoTema);
-        localStorage.setItem('theme', novoTema);
-    };
 
     if (document.startViewTransition) {
         document.startViewTransition(() => {
-            alternarTema();
+            TrocarTemaEFoto(novoTema);
         });
     } else {
-        alternarTema();
+        TrocarTemaEFoto(novoTema);
     }
-    })
+}
+
+btn.forEach((btns) => {
+    btns.addEventListener('click', Temas);
 });

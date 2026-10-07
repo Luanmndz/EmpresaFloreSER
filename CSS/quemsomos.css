@@ -1,11 +1,11 @@
 .quem-somos {
-   padding: 40px 20px;
-   display: flex;
-   flex-direction: column;
-   gap: 40px;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
-.card-profissional{
+.card-profissional {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -28,7 +28,7 @@
     font-weight: 400;
     font-size: 16px;
     letter-spacing: 2px;
-} 
+}
 
 
 .img {
@@ -42,6 +42,74 @@
 
 .reverse {
     flex-direction: row-reverse;
+}
+
+
+
+.foto-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.foto-wrapper .img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay-linkedin {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--roxo);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(100%);
+    transition: transform 0.4s ease-in-out
+}
+
+.overlay-linkedin-reverse {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--roxo);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-100%);
+    transition: transform 0.4s ease-in-out
+}
+
+.overlay-linkedin a ,.overlay-linkedin-reverse a {
+    color: var(--offwhite);
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+}
+
+.overlay-linkedin a:hover, .overlay-linkedin-reverse:hover a {
+    color: var(--preto);
+}
+
+.overlay-linkedin i, .overlay-linkedin-reverse i {
+    font-size: 2.2rem;
+}
+
+.foto-wrapper:hover .overlay-linkedin, .foto-wrapper:hover .overlay-linkedin-reverse {
+    transform: translate(0);
 }
 
 @media (max-width: 868px) {

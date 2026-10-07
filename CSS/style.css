@@ -1,13 +1,12 @@
 * {
-
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 :root {
     --roxo: #8F56C8;
@@ -16,12 +15,18 @@
     --nude: #E8D8CE;
     --preto: #000;
 
-    
-    --texto: #F8F9FA;
-    --bg-color: #000;
+    --texto: var(--offwhite);
+    --bg-color: var(--preto);
+    --bg-menu: var(--preto); 
 }
 
-.themeLight{
+[data-theme='light'] {
+    --texto: var(--preto);
+    --bg-color: var(--lavanda);
+    --bg-menu: var(--lavanda); 
+}
+
+.themeLight {
     display: block !important;
     animation: surgir 0.3s ease;
 }
@@ -30,22 +35,14 @@
     display: none !important;
 }
 
-[data-theme = 'light']{
-    --texto: #000;
-    --bg-color: #E6E6FA;
-}
-
- [data-theme = 'light'] .themeDark {
+[data-theme='light'] .themeDark {
     display: block !important;
     animation: surgir 0.3s ease;
-    
 }   
 
-[data-theme = 'light'] .themeLight {
+[data-theme='light'] .themeLight {
     display: none !important;
 } 
-
-
 
 body {
     margin: 0;
