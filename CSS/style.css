@@ -16,6 +16,7 @@
     --nude: #E8D8CE;
     --preto: #000;
 
+    
     --texto: #F8F9FA;
     --bg-color: #000;
 }
@@ -31,7 +32,7 @@
 
 [data-theme = 'light']{
     --texto: #000;
-    --bg-color: #F8F9FA;
+    --bg-color: #E6E6FA;
 }
 
  [data-theme = 'light'] .themeDark {

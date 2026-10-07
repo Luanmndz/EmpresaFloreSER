@@ -7,20 +7,50 @@
     top: 0;
     left: 0;
     z-index: 1000;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(2px);
 }
 
 nav {
     display: flex;
-    padding: 10px 20px;
+    padding: 5px 20px;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     max-width: 1200px;
     box-sizing: border-box;
-    
+    position: relative;
+}
+.fecharMenu {
+    background-color: transparent;
+    border: none;
+    color: var(--roxo);
+    text-align: center;
+}
+.fecharMenu:hover {
+    background-color: var(--roxo);
+    color: var(--texto);
+}
+.menu {
+    display: none;
+    color: var(--roxo);
 }
 
+.menu i {
+    font-size: 2rem;
+}
+
+.nav-side {
+    position: fixed;
+    right: 0;
+    top: 42px;
+    height: 30vh;
+    width: 150px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    z-index: 999;
+    position: absolute;
+}
 
 .nav-img {
     width: 180px;
@@ -33,6 +63,7 @@ nav {
     display: flex;
     align-items: center;
     gap: 15px; 
+
 }
 
 .nav-item {
@@ -82,7 +113,7 @@ nav {
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-/* Remove a linha de base do pseudo-elemento do Bootstrap Icons */
+
 .theme i::before {
     vertical-align: middle;
 }
@@ -91,7 +122,14 @@ nav {
     background-color: var(--roxo);
     transform: translateY(-3px);
 }
-
+.menu {
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+    border: none;
+}
 
 
 @media (max-width: 992px) {
@@ -112,8 +150,7 @@ nav {
 
 
 @media (max-width: 768px) {
-    nav {
-        flex-direction: column; 
+    nav { 
         gap: 12px;
         padding: 12px 10px;
     }
@@ -121,16 +158,19 @@ nav {
     .nav-img {
         width: 140px;
     }
-
+   
     .nav-items {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 6px;
-    }
+        display: none;
 
+    }
+   
     .nav-item {
         padding: 6px 10px;
         font-size: 0.75rem;
+    }
+    
+    .menu {
+        display: block;
     }
 }
 
