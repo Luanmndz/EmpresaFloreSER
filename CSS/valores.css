@@ -43,7 +43,8 @@
 }
 
 .foto-card:hover {
-     scale: 1.2;
+    opacity: 0.5;
+    transition: all 0.2s ease-in-out;
 }
 
 .btn-card {

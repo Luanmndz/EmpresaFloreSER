@@ -44,8 +44,6 @@
     flex-direction: row-reverse;
 }
 
-
-
 .foto-wrapper {
     position: relative;
     overflow: hidden;
@@ -70,7 +68,15 @@
     align-items: center;
     justify-content: center;
     transform: translateX(100%);
-    transition: transform 0.4s ease-in-out
+    transition: transform 0.2s ease-in-out;
+    opacity: 0.9;
+}
+/* precisa resolver o hover funcionando sem passar encima */
+.overlay-linkedin a{
+    display: inline-flex;
+}
+.overlay-linkedin-reverse a {
+    display: inline-flex;
 }
 
 .overlay-linkedin-reverse {
@@ -84,7 +90,8 @@
     align-items: center;
     justify-content: center;
     transform: translateX(-100%);
-    transition: transform 0.4s ease-in-out
+    transition: transform 0.2s ease-in-out;
+    opacity: 0.9;
 }
 
 .overlay-linkedin a ,.overlay-linkedin-reverse a {
