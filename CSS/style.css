@@ -61,6 +61,7 @@ body {
 .subtitulo {
     display: flex;
     justify-content: center;
+    margin-top: 20px;
 }
 
 .subtitulo h2 {
