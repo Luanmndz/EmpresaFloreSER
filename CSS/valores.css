@@ -153,7 +153,9 @@ h2 {
     }
 
     .card-valores {
-        width: 45%;
+        
+        flex: 1 1 45%; 
+        max-width: 48%;
     }
 }
 
@@ -175,3 +177,4 @@ h2 {
     }
 
 }
+
