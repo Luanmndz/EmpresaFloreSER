@@ -133,6 +133,7 @@ nav {
     color: var(--texto);
     font-size: 0.8rem;
     padding: 8px 0;
+    border-top: 1px solid var(--roxo);
 }
 
 .nav-side .nav-item:hover {
