@@ -1,5 +1,5 @@
 footer {
-    border-top: 5px solid var(--lavanda);
+    border-top: 5px solid var(--border);
     color: var(--texto);
     width: 100%;
 }
