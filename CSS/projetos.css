@@ -193,9 +193,13 @@
     .texto-projeto h3 {
         font-size: 1.3rem;
     }
-
+    .texto-projeto p{
+        text-align: justify;
+        font-size: 0.90rem;
+    }
     .informacoes-projeto li {
         font-size: 0.85rem;
+        text-align: justify;
     }
 
     .links-projetos a {
